@@ -1,0 +1,60 @@
+Source:,C:\Users\james\Desktop\LAB357\Raspberry Pi Pico\Pi Pico KeyPad\Pi Pico RP2040 keypad\RP2040_16Key_ili9341_LCD_keypad\RP2040_16Key_ili9341_LCD_keypad.kicad_sch,,,,,
+Date:,2022/5/18,,,,,
+Tool:,Eeschema (6.0.4),,,,,
+Generator:,C:\Program Files\KiCad\6.0\bin\scripting\plugins/bom_csv_grouped_by_value.py,,,,,
+Component Count:,51,,,,,
+,,,,,,
+Individual Components:,,,,,,
+,,,,,,
+Item,Qty,Reference(s),Value,LibPart,Footprint,Datasheet
+,,D1,D,Device:D,keyboard_parts:D_SOD123_axial,~
+,,D2,D,Device:D,keyboard_parts:D_SOD123_axial,~
+,,D3,D,Device:D,keyboard_parts:D_SOD123_axial,~
+,,D4,D,Device:D,keyboard_parts:D_SOD123_axial,~
+,,D5,D,Device:D,keyboard_parts:D_SOD123_axial,~
+,,D6,D,Device:D,keyboard_parts:D_SOD123_axial,~
+,,D7,D,Device:D,keyboard_parts:D_SOD123_axial,~
+,,D8,D,Device:D,keyboard_parts:D_SOD123_axial,~
+,,D9,D,Device:D,keyboard_parts:D_SOD123_axial,~
+,,D10,D,Device:D,keyboard_parts:D_SOD123_axial,~
+,,D11,D,Device:D,keyboard_parts:D_SOD123_axial,~
+,,D12,D,Device:D,keyboard_parts:D_SOD123_axial,~
+,,D13,D,Device:D,keyboard_parts:D_SOD123_axial,~
+,,D14,D,Device:D,keyboard_parts:D_SOD123_axial,~
+,,D15,D,Device:D,keyboard_parts:D_SOD123_axial,~
+,,D16,D,Device:D,keyboard_parts:D_SOD123_axial,~
+,,K1,KEYSW,keyboard_parts:KEYSW,Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB,
+,,K2,KEYSW,keyboard_parts:KEYSW,Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB,
+,,K3,KEYSW,keyboard_parts:KEYSW,Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB,
+,,K4,KEYSW,keyboard_parts:KEYSW,Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB,
+,,K5,KEYSW,keyboard_parts:KEYSW,Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB,
+,,K6,KEYSW,keyboard_parts:KEYSW,Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB,
+,,K7,KEYSW,keyboard_parts:KEYSW,Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB,
+,,K8,KEYSW,keyboard_parts:KEYSW,Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB,
+,,K9,KEYSW,keyboard_parts:KEYSW,Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB,
+,,K10,KEYSW,keyboard_parts:KEYSW,Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB,
+,,K11,KEYSW,keyboard_parts:KEYSW,Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB,
+,,K12,KEYSW,keyboard_parts:KEYSW,Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB,
+,,K13,KEYSW,keyboard_parts:KEYSW,Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB,
+,,K14,KEYSW,keyboard_parts:KEYSW,Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB,
+,,K15,KEYSW,keyboard_parts:KEYSW,Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB,
+,,K16,KEYSW,keyboard_parts:KEYSW,Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB,
+,,LED1,MX_SK6812MINI-E,:MX_SK6812MINI-E_1,marbastlib-mx:LED_MX_6028R,
+,,LED2,MX_SK6812MINI-E,:MX_SK6812MINI-E_2,marbastlib-mx:LED_MX_6028R,
+,,LED3,MX_SK6812MINI-E,:MX_SK6812MINI-E_3,marbastlib-mx:LED_MX_6028R,
+,,LED4,MX_SK6812MINI-E,:MX_SK6812MINI-E_4,marbastlib-mx:LED_MX_6028R,
+,,LED5,MX_SK6812MINI-E,:MX_SK6812MINI-E_5,marbastlib-mx:LED_MX_6028R,
+,,LED6,MX_SK6812MINI-E,:MX_SK6812MINI-E_6,marbastlib-mx:LED_MX_6028R,
+,,LED7,MX_SK6812MINI-E,:MX_SK6812MINI-E_7,marbastlib-mx:LED_MX_6028R,
+,,LED8,MX_SK6812MINI-E,:MX_SK6812MINI-E_8,marbastlib-mx:LED_MX_6028R,
+,,LED9,MX_SK6812MINI-E,:MX_SK6812MINI-E_9,marbastlib-mx:LED_MX_6028R,
+,,LED10,MX_SK6812MINI-E,:MX_SK6812MINI-E_10,marbastlib-mx:LED_MX_6028R,
+,,LED11,MX_SK6812MINI-E,:MX_SK6812MINI-E_11,marbastlib-mx:LED_MX_6028R,
+,,LED12,MX_SK6812MINI-E,:MX_SK6812MINI-E_12,marbastlib-mx:LED_MX_6028R,
+,,LED13,MX_SK6812MINI-E,:MX_SK6812MINI-E_13,marbastlib-mx:LED_MX_6028R,
+,,LED14,MX_SK6812MINI-E,:MX_SK6812MINI-E_14,marbastlib-mx:LED_MX_6028R,
+,,LED15,MX_SK6812MINI-E,:MX_SK6812MINI-E_15,marbastlib-mx:LED_MX_6028R,
+,,LED16,MX_SK6812MINI-E,marbastlib-mx:MX_SK6812MINI-E,marbastlib-mx:LED_MX_6028R,
+,,RZ1,RP2040-Zero,rp2040-zero:RP2040-Zero,RP2040-Zero:RP2040-Zero,
+,,SW1,RotaryEncoder_Switch,Device:RotaryEncoder_Switch,Keebio-Parts:RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm,~
+,,U1,2.4_TFT_SPI_240x320,2.4inch_ili9341:2.4_TFT_SPI_240x320,2.4inch_ili9341:2.4_TFT_SPI_240x320,http://www.lcdwiki.com/zh/2.4inch_SPI_Module_ILI9341_SKU:MSP2402
