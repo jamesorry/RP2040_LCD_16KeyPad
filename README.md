@@ -1,5 +1,4 @@
 # RP2040_LCD_16KeyPad
-[TOC]
 
 ![](https://i.imgur.com/ZOS9qN3.png)
 
