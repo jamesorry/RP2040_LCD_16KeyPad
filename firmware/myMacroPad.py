@@ -1,14 +1,9 @@
 """
-`adafruit_macropad`
-================================================================================
-
 A helper library for the Adafruit MacroPad RP2040.
+  https://github.com/adafruit/Adafruit_CircuitPython_MacroPad
 
-
-* Author(s): Kattni Rembor
-
-Implementation Notes
---------------------
+* Origin Author(s): Kattni Rembor
+* Change by: James Lu
 
 **Hardware:**
 
@@ -19,6 +14,7 @@ Implementation Notes
 
 * Adafruit CircuitPython firmware for the supported boards:
   https://circuitpython.org/downloads
+
 
 * Adafruit's CircuitPython NeoPixel library:
   https://github.com/adafruit/Adafruit_CircuitPython_NeoPixel
