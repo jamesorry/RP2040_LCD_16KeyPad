@@ -3,7 +3,7 @@ A helper library for the Adafruit MacroPad RP2040.
   https://github.com/adafruit/Adafruit_CircuitPython_MacroPad
 
 * Origin Author(s): Kattni Rembor
-* Change by: James Lu
+* Modify by: James Lu
 
 **Hardware:**
 
@@ -53,11 +53,8 @@ from adafruit_hid.keycode import Keycode
 from adafruit_hid.consumer_control import ConsumerControl
 from adafruit_hid.consumer_control_code import ConsumerControlCode
 from adafruit_hid.mouse import Mouse
-#from adafruit_simple_text_display import SimpleTextDisplay
 from adafruit_debouncer import Debouncer
 import adafruit_ili9341
-#import adafruit_matrixkeypad
-from adafruit_led_animation.animation.grid_rain import *
 from adafruit_led_animation.animation.blink import Blink
 from adafruit_led_animation.animation.sparklepulse import SparklePulse
 from adafruit_led_animation.animation.comet import Comet
@@ -72,19 +69,18 @@ from adafruit_led_animation.animation.colorcycle import ColorCycle
 from adafruit_led_animation.animation.rainbow import Rainbow
 from adafruit_led_animation.animation.customcolorchase import CustomColorChase
 from adafruit_led_animation.sequence import AnimationSequence
-from adafruit_led_animation.color import * #PURPLE, WHITE, AMBER, JADE, MAGENTA, ORANGE
+from adafruit_led_animation.color import *
 from adafruit_led_animation import helper
-import neopixel
 
 try:
     from neopixel import NeoPixel
     from keypad import Keys
-    import adafruit_hid  # pylint:disable=ungrouped-imports
+    import adafruit_hid
 except ImportError:
     pass
 
 __version__ = "1.0.1"
-__repo__ = ""
+__repo__ = "https://github.com/jamesorry/RP2040_LCD_16KeyPad.git"
 
 ROTATED_KEYMAP_0 = (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15)
 ROTATED_KEYMAP_90 = (3, 7, 11, 15, 2, 6, 10, 14, 1, 5, 9, 13, 0, 4, 8, 12)
@@ -246,7 +242,7 @@ class MacroPad:
         pixel_pin = board.GP26
         num_pixels = 16
         self._pixels = neopixel.NeoPixel(pixel_pin, num_pixels)
-        #print(self._pixels.height)
+        
         '''============================================================================================'''        
         self.blink = Blink(self._pixels, speed=0.5, color=JADE)
         self.colorcycle = ColorCycle(self._pixels, speed=0.4, colors=[MAGENTA, ORANGE])
@@ -273,8 +269,6 @@ class MacroPad:
             self._pixels, speed=0.1, size=2, spacing=3, colors=[ORANGE, WHITE, JADE]
         )
         
-        #self.rain = RainbowRain(self._pixels, speed=0.1)
-        
         # colors default to RAINBOW as defined in color.py
         self.custom_color_chase_rainbow = CustomColorChase(self._pixels, speed=0.1, size=2, spacing=3)
         self.custom_color_chase_rainbow_r = CustomColorChase(
@@ -296,7 +290,6 @@ class MacroPad:
         '''============================================================================================'''
         self.total_animations_num = 17 #need to define!!!
         self.animations = AnimationSequence(
-            #self.rain,
             self.custom_color_chase_rainbow,
             self.custom_color_chase_rainbow_r,
             self.custom_color_chase_rainbowchase,
@@ -608,6 +601,7 @@ class MacroPad:
         if self._mouse is None:
             self._mouse = Mouse(usb_hid.devices)
         return self._mouse
+        
     def display_image_clear(self) -> None:
         self.group.remove(self.sprite)
         
